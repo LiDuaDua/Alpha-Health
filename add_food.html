@@ -48,42 +48,6 @@
 
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
-
-    <style>
-        #Syncronize {
-            text-align: right;
-        }
-    </style>
-
-    <script type="text/javascript">
-  window.onload = function () {
-    var chart = new CanvasJS.Chart("chartContainer",
-    {
-      title:{
-        text: "Sleep Time"
-      },
-      data: [
-
-      {
-        dataPoints: [
-        { x: 10, y: 6, label: "02/01/17"},
-        { x: 20, y: 7,  label: "02/02/17" },
-        { x: 30, y: 4,  label: "02/03/17"},
-        { x: 40, y: 9,  label: "02/04/17"},
-        { x: 50, y: 10,  label: "02/05/17"},
-        { x: 60, y: 5, label: "02/06/17"},
-        { x: 70, y: 7,  label: "02/07/17"},
-        { x: 80, y: 9,  label: "02/08/17"}
-        ]
-      }
-      ]
-    });
-
-    chart.render();
-  }
-  </script>
-  <script type="text/javascript" src="canvasjs.min.js"></script>
-
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -103,8 +67,8 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a href="./index_signed.html">Home</a></li>
-            <li class = "active"><a href="./index_signed_steps.html">Steps</a></li>
-            <li><a href="./index_signed_calories.html">Calories</a></li>
+            <li><a href="./index_signed_steps.html">Steps</a></li>
+            <li class = "active"><a href="./index_signed_calories.html">Calories</a></li>
             <li><a href="./index_signed_sleep.html">Sleep</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Profile <span class="caret"></span></a>
@@ -176,25 +140,55 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Sleep</h1>
+                    <h1 class="page-header">Calories</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
 
 
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Diet History</h2>
+                </div>
+                <!-- /.col-lg-12 -->   
+            </div>
 
                 <!-- MAIN -->
 
-                <!-- /.col-lg-4 (nested) -->
-        <div>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="./index.html">Syncronize from my iPhone <span class="sr-only">(current)</span></a></li>
-            </ul>
-        </div>                        
-        
+            
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Date</th>
+                  <th>Time</th>
+                  <th>Food</th>
+                  <th>Quantity</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td><input type="email" id="inputEmail" class="form-control" placeholder="Date" required autofocus></td>
+                  <td><input type="email" id="inputEmail" class="form-control" placeholder="Time" required autofocus></td>
+                  <td><input type="email" id="inputEmail" class="form-control" placeholder="Food" required autofocus></td>
+                  <td><input type="email" id="inputEmail" class="form-control" placeholder="Quantity" required autofocus></td>
+                </tr>
 
-        <div id="chartContainer" style="height: 300px; width: 100%;">
-        </div>
+                <!-- /.col-lg-12 -->   
+                </div>
+                
+              </tbody>
+            </table>
+            <div class="row">
+                  <ul class="col-lg-12 nav navbar-nav navbar-right">
+                      <li><a href="./index_signed_calories.html">Cancel <span class="sr-only">(current)</span></a></li>
+                      <li><a href="./index_signed_calories.html">Submit <span class="sr-only">(current)</span></a></li>
+                  </ul>
+          </div>
+
+
 
                 <!-- /.col-lg-12 -->
 
