@@ -48,6 +48,172 @@
 
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
+	<style>
+        #Syncronize {
+            text-align: right;
+            margin-bottom: 10px;
+        }
+        #Button0 {
+            text-align: right;
+        }
+        #title {
+            font-size: 175%;
+        }
+        .share-buttons img {
+            width: 35px;
+            padding: 5px;
+            border: 0;
+            box-shadow: 0;
+            display: inline;
+        }
+
+body {
+    color: #777777;
+    font-family: "Lato","Helvetica Neue","Arial","Helvetica",sans-serif;
+    font-size: 13px;
+    line-height: 19.5px;
+}
+
+
+.mobile-social-share h3 {
+    color: inherit;
+    float: left;
+    font-size: 15px;
+    line-height: 20px;
+    margin: 25px 25px 0 25px;
+}
+
+.share-group {
+    float: right;
+    margin: 18px 25px 0 0;
+}
+
+.btn-group {
+    display: inline-block;
+    font-size: 0;
+    position: relative;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.mobile-social-share ul {
+    float: right;
+    list-style: none outside none;
+    margin: 0;
+    min-width: 61px;
+    padding: 0;
+}
+
+.share {
+    min-width: 17px;
+}
+
+.mobile-social-share li {
+    display: block;
+    font-size: 18px;
+    list-style: none outside none;
+    margin-bottom: 3px;
+    margin-left: 4px;
+    margin-top: 3px;
+}
+
+.btn-share {
+    background-color: #BEBEBE;
+    border-color: #CCCCCC;
+    color: #333333;
+}
+
+.btn-twitter {
+    background-color: #3399CC !important;
+    width: 51px;
+    color:#FFFFFF!important;
+}
+
+.btn-facebook {
+    background-color: #3D5B96 !important;
+    width: 51px;
+    color:#FFFFFF!important;
+}
+
+.btn-facebook {
+    background-color: #3D5B96 !important;
+    width: 51px;
+    color:#FFFFFF!important;
+}
+
+.btn-google {
+    background-color: #DD3F34 !important;
+    width: 51px;
+    color:#FFFFFF!important;
+}
+
+.btn-linkedin {
+    background-color: #1884BB !important;
+    width: 51px;
+    color:#FFFFFF!important;
+}
+
+.btn-pinterest {
+    background-color: #CC1E2D !important;
+    width: 51px;
+    color:#FFFFFF!important;
+}
+
+.btn-mail {
+    background-color: #FFC90E !important;
+    width: 51px;
+    color:#FFFFFF!important;
+}
+
+.caret {
+    border-left: 4px solid rgba(0, 0, 0, 0);
+    border-right: 4px solid rgba(0, 0, 0, 0);
+    border-top: 4px solid;
+    display: inline-block;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    width: 0;
+}
+
+#socialShare {
+    max-width:59px;
+    margin-bottom:18px;
+}
+
+#socialShare > a{
+    padding: 6px 10px 6px 10px;
+}
+
+@media (max-width : 320px) {
+    #socialHolder{
+        padding-left:5px;
+        padding-right:5px;
+    }
+    
+    .mobile-social-share h3 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    #socialShare{
+        margin-left:5px;
+        margin-right:5px;
+    }
+    
+    .mobile-social-share h3 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width : 238px) {
+    .mobile-social-share h3 {
+        font-size: 12px;
+    }
+}
+
+
+    </style>
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -71,15 +237,23 @@
             <li><a href="./index_signed_calories.html">Calories</a></li>
             <li><a href="./index_signed_sleep.html">Sleep</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Profile <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">share <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                <li><a class="share-buttons" href="http://www.facebook.com/sharer.php?u=https://simplesharebuttons.com" target="_blank">
+                <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />Facebook
+                </a></li>
+                <li><a class="share-buttons" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://simplesharebuttons.com" target="_blank">
+                <img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" />Linkedin
+                </a></li>
+                <li><a class="share-buttons" href="https://plus.google.com/share?url=https://simplesharebuttons.com" target="_blank">
+                <img src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" />Google+
+                </a></li>
+                <li><a class="share-buttons" href="http://www.tumblr.com/share/link?url=https://simplesharebuttons.com&amp;title=Simple Share Buttons" target="_blank">
+                <img src="https://simplesharebuttons.com/images/somacro/tumblr.png" alt="Tumblr" />Tumblr
+                </a></li>
+                <li><a class="share-buttons" href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank">
+                <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />Twitter
+                </a></li>
               </ul>
             </li>
           </ul>
@@ -111,15 +285,16 @@
             <div class="navbar-default sidebar" role="navigation">
                     <ul class="nav" id="side-menu">
                        
-                        <li>
-                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
-                        </li>
-                        
-                        <li>
-                            <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
-                        </li>
-                        <li>
-                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
+<li>
+                            <b id="title" style="margin-left:0.5em; color:rgb(93,173,226);">Basic Info</b>
+                            <p id="Info" style="margin-left:1em;color:rgb(93,173,226);face:verdana;">
+                                Name: Andy<br>
+                                Age: 22<br>
+                                Sex: Male<br>
+                                Device: iWatch<br>
+                                Email Address: Andy123@gmail.com<br>
+                                Last Login Location: Evanston, IL<br>
+                            </p>
                         </li>
                                       
                         
